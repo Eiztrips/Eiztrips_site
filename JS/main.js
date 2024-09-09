@@ -9,10 +9,11 @@ counter = 0;
 document.getElementById('body').style.backgroundImage = `url('${images[Math.floor(Math.random() * 5)]}')`;
 
 function OnClickButton() {
-    stats = document.getElementById('bio-box');
-    skin = document.getElementById('skin-box');
+    [stats, skin] = [document.getElementById('bio-box'), document.getElementById('skin-box')];
+
     let up = setInterval(() => [stats.classList.add('--up'), skin.classList.add('--up')], 800)
     let down = setInterval(() => [stats.classList.remove('--up'), skin.classList.remove('--up')], 1600)
+    
     if (counter == 0) {
         skin.classList.add('--show');
         stats.classList.add('--show'); 

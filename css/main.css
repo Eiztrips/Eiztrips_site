@@ -79,7 +79,7 @@
     width: 5%;
     top: 45%;
     left: 48%;
-    border-radius: 2vh;
+    border-radius: 20%;
     -webkit-box-shadow: 0px 0px 50px -1px rgba(80, 2, 110, 1);
     -moz-box-shadow: 0px 0px 50px -1px rgb(53, 51, 54);
     box-shadow: 0px 0px 50px -1px rgba(80, 2, 110, 1);
@@ -101,14 +101,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     left: 5%; bottom: 60%;
-    width: 27%;
+    width: 32%;
     height: 25%;
     border-radius: 2vh;
     font-size: 3vh;
     font-weight: 900;
     font-family: "Press Start 2P", system-ui;
     font-style: normal;
-    padding: 0em 3em 0em;
+    align-content: center;
+    align-items: center;
 }
 
 #bio-box.--up {
@@ -121,13 +122,11 @@
 }
 
 #bio{
-    position: absolute;
+    padding: 0px 10%;
     list-style: none; 
-    padding: 0;
     font-size: 2vh;
     bottom: 10%;
     left: 5%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #bio li{
@@ -254,3 +253,49 @@
  top: 2em;
 }
 /* !Tooltip */
+
+
+
+
+@media screen and (max-width: 1000px) {
+    #bio-box {
+        width: 100%;
+        left: 0;
+        bottom: 65%;
+    }
+
+    #skin-box {
+        width: 30%;
+        height: 30%;
+        right: 35%;
+        bottom: 10%;
+        align-items: center;
+        align-content: center;
+    }
+
+    #skin {
+        transform: scale(0.6);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #skin {
+        bottom: 20%
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #skin {
+        bottom: 10%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #button {
+        width: 100%;
+    }
+    #head {
+        width: 10%;
+        left: 45%;
+    }
+}

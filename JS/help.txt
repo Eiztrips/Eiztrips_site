@@ -1,3 +1,0 @@
-document.write("")
-console.warn/error("Вывести в консоль сайта пред/ошибку")
-alert, prompt, confirm
